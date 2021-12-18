@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Timers</title>
+    <link rel="icon" type="image/png" href="/clock.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+      .mono {
+        font-family: monospace;
+      }
+      #error_login{
+        display: none;
+      }
+      .timers-block {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+      <section id="app_login" class="uk-container uk-margin-top uk-margin-bottom">
+
+        <h2>Login</h2>
+
+        <form id="login">
+          <p><input type="text" name="username" class="username uk-input"></p>
+          <p><input type="password" name="password" class="password uk-input"></p>
+          <p><button class="uk-button uk-button-primary" >Login</button></p>
+        </form>
+
+        <div id="error_login">
+          <p style="color: red" >
+            <b> Не верный пароль или логин! </b>
+          </p>
+        </div>
+
+        <h1>OR</h1>
+        <h2>Signup</h2>
+
+         <form id="signup">
+          <p><input type="text" name="username" class="username uk-input"></p>
+          <p><input type="password" name="password" class="password uk-input"></p>
+          <p><button class="uk-button uk-button-primary">Signup</button></p>
+        </form>
+      </section>
+
+
+<section id="block_timers" class="timers-block" style="padding: 50px">
+  <div id="create_new_timer" >
+   <p>
+      <form id="create_Timer">
+        <input type="text" name="description" class="description uk-input" placeholder="Type description...">
+          <p>
+            <button  id="start-timer" class="uk-button uk-button-primary">
+              <span uk-icon="play"></span> Start timer
+            </button>
+          </p>
+      </form>
+    </p>
+  </div>
+  <div id="persional">
+  PERSIONAL DATA
+  </div>
+  <div id="isactive_timers">
+    TIMERS
+  </div>
+  <div> &nbsp; </div>
+   <div id="disactive_timers">
+   OLD TIMERS
+  </div>
+</section>
+
+<script src="/creat.js"></script>
+
+  </body>
+</html>
